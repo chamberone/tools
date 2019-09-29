@@ -11,7 +11,7 @@ import java.io.ObjectOutputStream;
  * @author guoping
  *
  */
-public class Utils {
+public class CloneUtils {
 
     /**
      * 简单深度克隆
@@ -20,7 +20,7 @@ public class Utils {
      * @return
      */
     @SuppressWarnings("unchecked")
-    public <T> T clone(T t) {
+    public static <T> T deepClone(T t) {
         if (null == t) {
             return null;
         }
